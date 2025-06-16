@@ -1,0 +1,185 @@
+/*////////////////////////
+    Table of Contents
+    1. Global Styles
+    2. Typography
+    3. Layout
+        3.1 Reusables
+        3.2 Other
+    4. Areas
+        4.1 Header
+        4.2 Introduction
+        etc.
+    5. Media Queries
+////////////////////////*/
+
+/* ------------------------------- 1. Global Styles -------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* ------------------------------- 2. Typography ----------------------------------- */
+:root {
+    --headerfont: "Merriweather";
+    --normalfont: "Roboto";
+}
+
+body {
+    font-family: var(--normalfont), sans-serif;
+    overflow-y: scroll;
+}
+
+a {
+    font-family: var(--normalfont), sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--headerfont), sans-serif;
+}
+
+/* ------------------------------- 3. Layout --------------------------------------- */
+:root {
+    --purple: #5722CD;
+    --blue: #4845E4;
+    --pink: #ED4385;
+    --black: #0C0C0C;
+    --lightpurple: #F2F0FF;
+    --lightgrey: #F3F6F9;
+    --grey: #7A7A7A;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 3rem;
+}
+
+/* --------------- 3.1 Reusables ----------------------- */
+
+/* --------------- 3.2 Other --------------------------- */
+
+/* ------------------------------- 4. Areas ---------------------------------------- */
+
+/* --------------- 4.1 Header ------------------------- */
+
+header {
+    background: linear-gradient(141deg, rgba(72, 69, 228, 1) 22%, rgba(87, 34, 205, 1) 82%);
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-nav {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    gap: 3rem;
+    padding-top: 0.5rem;
+}
+
+.header-nav a, .header-nav a:visited {
+    color: white;
+    text-decoration: none;
+    font-weight: 200;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5.5rem 1rem 0 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.header-content h1 {
+    font-size: 46px;
+    padding-bottom: 1rem;
+    color: white;
+    font-weight: 450;
+}
+
+.header-content p {
+    font-size: 26px;
+    padding-bottom: 2rem;
+    color: white;
+    font-weight: 200;
+}
+
+.header-content a, .header-content a:hover {
+    text-decoration: none;
+    padding: 1.5em 2.8em;
+    border-radius: 30px;
+    font-size: 14px;
+    background-color: var(--pink);
+    color: white;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 3);
+}
+
+.img-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10rem;
+
+}
+
+/* --------------- 4.2 Introduction ------------------- */
+
+.info-section {
+    padding-top: 6rem;
+    text-align: center;
+    max-width: 900px;
+    font-size: 20px;
+    font-weight: 100;
+    color: var(--purple);
+}
+
+.info-section p {
+    padding: 6rem 0;
+    font-weight: 400;
+    color: var(--black);
+}
+
+.info-section a, .info-section a:visited {
+    text-decoration: none;
+    color: var(--purple);
+}
+
+.project-sections {
+    background-color: var(--lightgrey);
+    padding: 5rem 0;
+}
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    padding-bottom: 4rem;
+}
+
+.project-content {
+    max-width: 300px;
+}
+
+.project-img {
+    width: 500px;
+}
+
+.project-img img {
+    max-width: 100%;
+}
+
+.projects:nth-of-type(even) {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* ------------------------------- 5. Media Queries -------------------------------- */
