@@ -183,7 +183,6 @@ header::after {
     font-weight: 700;
     color: var(--lightpurple);
     z-index: -10;
-
 }
 
 .info-section p {
@@ -471,5 +470,17 @@ footer {
     .footer-content {
         font-weight: 200;
         font-size: 0.9rem;
+    }
+
+    .info-section::before {
+        content: "hello";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -62%);
+        font-size: 13rem;
+        font-weight: 700;
+        color: var(--lightpurple);
+        z-index: -10;
     }
 }
